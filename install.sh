@@ -200,7 +200,7 @@ END
 cat > /etc/cron.d/dailyreboot <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-0 0 * * * root /sbin/reboot
+0 5 * * * root /sbin/reboot
 END
 systemctl restart cron
 
